@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../src/App.css">
+  <link rel="icon" href="favicon.ico">
+  <title>Forecast</title>
+</head>
+
+<body>
+  <div id="root">
+  </div>
+
+  <script src="../src/index.js"></script>
+  <script>
+
+    // Changing background color based on time
+    let hours = new Date().getHours()
+    let isDayTime = hours > 6 && hours < 20
+    let elm = document.getElementsByTagName("body")[0];
+    let day = "background: #7474BF; background: -webkit-linear-gradient(to right, #345bc7, #53a0d3); background: linear-gradient(to right, #345bc7, #53a0d3);"
+    let night = "background: #7474BF; background: -webkit-linear-gradient(to right, #1a1052, #16263d); background: linear-gradient(to right, #1a1052, #16263d); ";
+
+    if (isDayTime)
+      elm.style.cssText += day;
+    else elm.style.cssText += night;
+
+  </script>
+</body>
+
+</html>

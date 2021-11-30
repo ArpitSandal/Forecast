@@ -1,0 +1,184 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sons-serif;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+button{
+  border: 0;
+  padding: 0.4em;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+button:hover{
+  border-color: rgb(226, 223, 223);
+  color:rgb(226, 223, 223);
+}
+
+#root{
+  height: 400px;
+
+}
+
+.my-container {
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 4em;
+  padding-bottom: 0;
+  color: white;
+}
+
+/* -------------- location and currency------------- */
+
+.location-and-currency{
+  width: 40%;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+/* -------------- Location ---------------- */
+.location {
+  width: 100%;
+  height: 60%;
+  /* border: 2px solid black; */
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* --------------------- Currency -------------- */
+.currency{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3em;
+}
+
+.inner-currency{
+  width: 70%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.currency-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4em;
+}
+
+/* ----------------------- Weather -------------------- */
+
+.weather {
+  width: 60%;
+  /* border: 2px solid green; */
+}
+
+.today-weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid red; */
+  /* height: 40%; */
+  margin-bottom: 0.5em;
+}
+
+.current-date{
+  font-weight: 500;
+}
+
+.today-temperature{
+  display: flex;
+  align-items: center;
+  /* border: 2px solid; */
+  font-weight: 600;
+  font-size: 1.3rem;
+  /* justify-content: center; */
+}
+
+.today-temperature img{
+  width: 50%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid blue; */
+}
+
+
+/* ------------ pagination ---------------- */
+.pagination{
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: space-around;
+  height: 21%;
+  /* border-bottom: 2px solid white; */
+}
+
+.pagination-temperature{
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.pagination-temperature p{
+  font-weight: 500;
+}
+
+.pagination-description{
+  width: 20%;
+  /* border: 2px solid green; */
+}
+
+
+/* ----------------- media queries --------------- */
+
+@media(max-width: 770px){
+  body,html{
+    font-size: 0.9rem;
+  }
+
+  #root{
+    height: 700px;
+  }
+  .my-container{
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  .weather{
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .pagination{
+    height: 19%;
+  }
+
+  .location-and-currency{
+    width: 100%;
+  }
+
+  .location{
+    height: 70%;
+  }
+}
