@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Forecast/static/css/main.3515cb27.chunk.css",
+    "main.js": "/Forecast/static/js/main.5af975a0.chunk.js",
+    "main.js.map": "/Forecast/static/js/main.5af975a0.chunk.js.map",
+    "runtime-main.js": "/Forecast/static/js/runtime-main.860406f6.js",
+    "runtime-main.js.map": "/Forecast/static/js/runtime-main.860406f6.js.map",
+    "static/css/2.68ba508b.chunk.css": "/Forecast/static/css/2.68ba508b.chunk.css",
+    "static/js/2.24f19551.chunk.js": "/Forecast/static/js/2.24f19551.chunk.js",
+    "static/js/2.24f19551.chunk.js.map": "/Forecast/static/js/2.24f19551.chunk.js.map",
+    "index.html": "/Forecast/index.html",
+    "static/css/2.68ba508b.chunk.css.map": "/Forecast/static/css/2.68ba508b.chunk.css.map",
+    "static/css/main.3515cb27.chunk.css.map": "/Forecast/static/css/main.3515cb27.chunk.css.map",
+    "static/js/2.24f19551.chunk.js.LICENSE.txt": "/Forecast/static/js/2.24f19551.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.860406f6.js",
+    "static/css/2.68ba508b.chunk.css",
+    "static/js/2.24f19551.chunk.js",
+    "static/css/main.3515cb27.chunk.css",
+    "static/js/main.5af975a0.chunk.js"
+  ]
+}
